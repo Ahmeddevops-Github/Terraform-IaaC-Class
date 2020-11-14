@@ -33,7 +33,6 @@ resource "aws_security_group" "Terraform-Class_2-Security-Group" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-  
 
   ingress {
     description = "TLS from VPC"
