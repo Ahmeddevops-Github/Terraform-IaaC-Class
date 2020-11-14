@@ -9,11 +9,10 @@ resource "aws_instance" "Terraform-Class_2-Instance-Created" {
   availability_zone           = "us-east-1a"
 }
 
-
-# resource "aws_instance" "Terraform-Class_2-Instance-Created_2" {
-#     ami = "ami-02354e95b39ca8dec"
-# 	instance_type = "t2.micro"
-# }
+resource "aws_instance" "Terraform-Class_2-Instance-Created_2" {
+  ami           = "ami-02354e95b39ca8dec"
+  instance_type = "t2.micro"
+}
 
 resource "aws_ebs_volume" "Terraform-Class_2-EBS-Created" {
   availability_zone = "us-east-1a"
