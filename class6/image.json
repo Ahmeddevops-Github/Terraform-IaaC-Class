@@ -2,12 +2,32 @@
     "builders": [
       {
         "type": "amazon-ebs",
-        "region": "us-east-1",
-        "source_ami": "ami-0947d2ba12ee1ff75",
+        "region": "us-east-2",
+        "source_ami": "ami-01e36b7901e884a10",
         "instance_type": "t2.micro",
         "ssh_username": "centos",
         "ami_name": "packer-example {{timestamp}}"
       }
+    ],
+
+    "provisioners": [
+        {
+      "type": "file",
+         "source": "Packer_Files/welcome.txt",
+          "destination": "/tmp/"
+           },
+        {
+      "type": "shell",
+         "inline":[
+            "sudo yum install telnet -y",
+            "sudo yum install wget -y"
+           ]
+         },
+      {
+      "type": "shell",
+          "script": "Packer_Files/example.sh"
+          }
     ]
+
   }
   
