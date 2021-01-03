@@ -22,8 +22,8 @@ instance_class = "db.t2.micro"
 username = "foo"
 password = "foobarbaz"
 publicly_accessible = true
-}
 allocated_storage = "20"
+}
 ```
 
 ## Create another file output.tf
