@@ -4,7 +4,7 @@
 
 ```
 module "db" {
-source = "../class7"
+source =  "Ahmeddevops-Github/instance/rds"
 region = "us-east-2"
 subnet_ids = [
 "subnet-05b608e6457f5e06a",
@@ -23,6 +23,7 @@ username = "foo"
 password = "foobarbaz"
 publicly_accessible = true
 }
+allocated_storage = "20"
 ```
 
 ## Create another file output.tf
