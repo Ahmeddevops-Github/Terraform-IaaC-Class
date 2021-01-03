@@ -1,5 +1,5 @@
-resource "aws_security_group" "terraform-data_base-security_group" {
-  name        = "terraform-data_base-sg"
+resource "aws_security_group" "db" {
+  name        = "${var.security_group_name}"
   description = "Allow Mysql traffic"
 
   ingress {
@@ -7,7 +7,7 @@ resource "aws_security_group" "terraform-data_base-security_group" {
     from_port   = 3306
     to_port     = 3306
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["${var.allowed_hosts}"]
   }
 
   egress {
