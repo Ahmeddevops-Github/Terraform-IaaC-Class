@@ -7,9 +7,11 @@ variable "instance_class" {}
 variable "username" {}
 variable "password" {}
 variable "publicly_accessible" {}
+
 variable "subnet_ids" {
   type = "list"
 }
+
 variable "allowed_hosts" {
   type = "list"
 }

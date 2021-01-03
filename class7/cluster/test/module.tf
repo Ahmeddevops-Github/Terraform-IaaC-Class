@@ -5,7 +5,7 @@ module "db" {
   subnet_ids = [
     "subnet-05b608e6457f5e06a",
     "subnet-0546303e39a5cfe8c",
-    "subnet-0f33d7a9c1aa313f6"
+    "subnet-0f33d7a9c1aa313f6",
   ]
 
   security_group_name = "db"
