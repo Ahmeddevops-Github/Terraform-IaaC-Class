@@ -7,9 +7,9 @@ module "db" {
 source = "../class7"
 region = "us-east-2"
 subnet_ids = [
-"subnet-09e046e79485b9194",
-"subnet-0d27bd3f9c6a10988",
-"subnet-0533f931432ff4966"
+"subnet-05b608e6457f5e06a",
+"subnet-0546303e39a5cfe8c",
+"subnet-0f33d7a9c1aa313f6",
 ]
 security_group_name = "db"
 allowed_hosts = [
