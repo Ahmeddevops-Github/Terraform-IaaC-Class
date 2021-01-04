@@ -20,9 +20,11 @@ provider "kubernetes" {
 }
 
 
-module "my-cluster" {
-  source = "terraform-aws-modules/eks/aws"
-  version = "12.0.0"
+
+
+module "eks" {
+  source  = "Ahmeddevops-Github/eks/aws"
+  version = "2.0.0"
   cluster_name = "${var.cluster_name}"
   cluster_version = "${var.cluster_version}"
   subnets = "${var.subnets}"
