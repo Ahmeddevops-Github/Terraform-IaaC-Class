@@ -1,11 +1,11 @@
-# terraform-iaac-august-2020 ###
+# This module creates azure-vm-scale-set #
 
+### Copy and Paste ###
 
-## This module creates azure-vm-scale-set ###
 
 ```
 module "ss" {
-    source                  = "../"
+    source                  = "Ahmeddevops-Github/ss/azure"
     resource_group_name     = "example-resources"
     resource_group_location = "West Europe"
     ss_name                 = "example-ss"
@@ -21,4 +21,10 @@ module "ss" {
     os_sku                  = "16.04-LTS"
     os_version              = "latest"
 }
+```
+
+### Ahmed DevOps ###
+
+```
+Ahmed Aboagye
 ```
