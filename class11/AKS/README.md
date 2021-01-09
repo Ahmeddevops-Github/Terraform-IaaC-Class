@@ -1,2 +1,28 @@
-# Terraform-IaaC-Class
-Terraform IaaC Class 2
+# terraform-iaac-august-2020 ###
+
+
+## This module creates azure-vm-scale-set ###
+
+```
+module "aks" {
+  source                       = ""Ahmeddevops-Github/aks/azure""
+  cluster_name                 = "example-aks1"
+  kubernetes_version           = "1.18.4"
+  node_pool_name               = "node1"
+  min_count                    = "1"
+  max_count                    = "1"
+  client_id                    = ""
+  client_secret                = ""
+  environment                  = "dev"
+  resource_group_name_location = "West Europe"
+  resource_group_name          = "dev"
+  username                     = "centos"
+  vm_size                      = "Standard_A2_v2"
+}
+```
+
+
+### Ahmed DevOps ###
+```
+Ahmed Aboagye
+```
