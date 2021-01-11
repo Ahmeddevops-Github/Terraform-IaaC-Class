@@ -3,7 +3,7 @@
 class12
 class12/*
 class12/
-provider.tf
+
 bucket.tf
 # .tfstate files
 *.tfstate
