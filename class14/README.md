@@ -5,7 +5,7 @@
 
 ```
 module "cluster" {
-    source                      = "../"
+    source                      = "Ahmeddevops-Github/gke_cluster/google"
     project                     = var.project_id
     cluster_name                = "my-gke-cluster"
     location                    = "us-central1"
