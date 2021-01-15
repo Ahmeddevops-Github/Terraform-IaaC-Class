@@ -1,5 +1,9 @@
-Creates GKE Cluster
-Copy paste the below code
+# Creates GKE Cluster #
+
+
+## Copy paste the below code ##
+
+```
 module "cluster" {
     source                      = "../"
     project                     = var.project_id
@@ -9,6 +13,11 @@ module "cluster" {
     machine_type                = "e2-medium"
     node_count                  = 1
 }
-Run
+```
+
+
+# Run #
+```
 terraform init 
 terraform apply 
+```
