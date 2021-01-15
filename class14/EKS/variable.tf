@@ -1,5 +1,5 @@
 variable "project_id" {
-  default = "crucial-haiku-298300"
+  default = ""
 }
 
 variable "cluster_name" {}
